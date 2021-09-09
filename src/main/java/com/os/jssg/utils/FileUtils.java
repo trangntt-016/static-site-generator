@@ -100,6 +100,10 @@ public class FileUtils {
             Files.createDirectories(distPath);
         }
     }
+
+    public static String processText(String text){
+        return text.replace("-"," ").replace("./","").replace("'","").replace("\"","");
+    }
 }
 
 

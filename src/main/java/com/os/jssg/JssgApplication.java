@@ -4,6 +4,8 @@ import com.os.jssg.processor.HTMLProcessor;
 import lombok.SneakyThrows;
 import picocli.CommandLine;
 
+import java.util.List;
+
 
 @CommandLine.Command(name = "jssg",
         description = "A tool that generates a full static HTML website based on raw text",
@@ -17,7 +19,7 @@ class JssgApplication implements Runnable {
     @CommandLine.Option(names = {"-h", "--help"}, usageHelp = true, description = "Print usage help and exit")
     Boolean usageHelpRequested = false;
 
-    @CommandLine.Option(names = {"-i", "--input"}, description = "Generate HTML website from file/folder")
+    @CommandLine.Option(names = {"-i", "--input"},description = "Generate HTML website from file/folder")
     private String filePath;
 
     @CommandLine.Option(names = {"-o", "--output"}, defaultValue = "dist", description = "Specified different output path")
