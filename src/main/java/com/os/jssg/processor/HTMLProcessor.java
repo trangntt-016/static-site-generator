@@ -17,11 +17,12 @@ import java.util.Map;
 public class HTMLProcessor {
     private static final Logger logger = LoggerFactory.getLogger(FileUtils.class);
 
-    public void convertToHTML(String pathStr) throws IOException {
+    public void convertToHTML(String pathStr, String outputPath) throws IOException {
         Path filePath = Paths.get(pathStr);
 
         if(!Files.exists(filePath)){
             logger.error("Cannot find any path with " + filePath);
+            return;
         }
 
         // if input is a file
@@ -29,7 +30,10 @@ public class HTMLProcessor {
             try {
                 Map htmlMap = FileUtils.convertTextToHTML(pathStr);
 
-                FileUtils.createHTMLFile(htmlMap,true);
+                // reset dist and create one if not exists
+                FileUtils.resetDist();
+
+                FileUtils.createHTMLFile(htmlMap, outputPath);
 
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
@@ -39,10 +43,13 @@ public class HTMLProcessor {
         }
         // if input is a folder
         else {
+            // reset dist and create one if not exists
+            FileUtils.resetDist();
+
             Files.list(filePath).forEach(f->{
                 Map htmlMap = FileUtils.convertTextToHTML(f.toAbsolutePath().toString());
                 try {
-                    FileUtils.createHTMLFile(htmlMap,false);
+                    FileUtils.createHTMLFile(htmlMap, outputPath);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

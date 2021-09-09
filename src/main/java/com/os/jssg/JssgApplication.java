@@ -20,6 +20,9 @@ class JssgApplication implements Runnable {
     @CommandLine.Option(names = {"-i", "--input"}, description = "Generate HTML website from file/folder")
     private String filePath;
 
+    @CommandLine.Option(names = {"-o", "--output"}, defaultValue = "dist", description = "Specified different output path")
+    private String outputPath;
+
     @SneakyThrows
     public void run() {
         if(versionHelpRequested){
@@ -30,7 +33,7 @@ class JssgApplication implements Runnable {
         }
         else if(filePath!=null){
             HTMLProcessor processor = new HTMLProcessor();
-            processor.convertToHTML(filePath);
+            processor.convertToHTML(filePath, outputPath);
         }
     }
 

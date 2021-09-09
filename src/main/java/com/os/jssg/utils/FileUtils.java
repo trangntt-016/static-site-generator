@@ -17,14 +17,8 @@ import org.slf4j.LoggerFactory;
 public class FileUtils {
     private static final Logger logger = LoggerFactory.getLogger(FileUtils.class);
 
-    public static void cleanDirectory() {
+    public static void cleanDirectory(Path filePath) {
         try {
-            Path filePath = Paths.get("./dist");
-
-            if (!Files.exists(filePath)) {
-                Files.createDirectories(filePath);
-            }
-
             Files.list(filePath).forEach(f -> {
                 try {
                     Files.delete(f);
@@ -81,15 +75,30 @@ public class FileUtils {
         return Map.of("title",title,"body",html);
     }
 
-    public static void createHTMLFile(Map<String, String>htmlMap, boolean isFile) throws IOException {
-        Path path = Paths.get("./dist/" + htmlMap.get("title") + ".html");
+    public static void createHTMLFile(Map<String, String>htmlMap, String outputPathStr) throws IOException {
+        Path outputPath = Paths.get(outputPathStr);
+
+        if(!Files.exists(outputPath)){
+            logger.error("Specified output path is not a valid directory");
+            return;
+        }
+
+        // write new html files to dist
+        Path path = Paths.get(outputPath.toString() +"\\"+ htmlMap.get("title") + ".html");
 
         byte[] strToBytes = htmlMap.get("body").toString().getBytes();
 
-        // delete all current files in ./dist if the input is file
-        if(isFile)   FileUtils.cleanDirectory();
-
         Files.write(path, strToBytes);
+    }
+
+    public static void resetDist() throws IOException {
+        Path distPath = Paths.get("./dist");
+        if(Files.exists(distPath)){
+            cleanDirectory(distPath);
+        }
+        else{
+            Files.createDirectories(distPath);
+        }
     }
 }
 
