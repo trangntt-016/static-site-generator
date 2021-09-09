@@ -1,10 +1,7 @@
 package com.os.jssg;
 
-import com.os.jssg.utils.HTMLProcessor;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import com.os.jssg.processor.HTMLProcessor;
+import lombok.SneakyThrows;
 import picocli.CommandLine;
 
 
@@ -23,6 +20,7 @@ class JssgApplication implements Runnable {
     @CommandLine.Option(names = {"-i", "--input"}, description = "Generate HTML website from file/folder")
     private String filePath;
 
+    @SneakyThrows
     public void run() {
         if(versionHelpRequested){
             new CommandLine(this).printVersionHelp(System.err);
