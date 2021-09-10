@@ -10,7 +10,7 @@ import java.util.List;
 @CommandLine.Command(name = "jssg",
         description = "A tool that generates a full static HTML website based on raw text",
         version = "JSSG v.1.0",
-        header = "%n@|green Java Static Site Generator|@")
+        header = "Java Static Site Generator")
 class JssgApplication implements Runnable {
     @CommandLine.Option(names = {"-v", "--version"}, versionHelp = true, description = "Print version and exit")
     Boolean versionHelpRequested = false;

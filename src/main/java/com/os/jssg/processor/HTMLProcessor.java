@@ -1,6 +1,8 @@
 package com.os.jssg.processor;
 
 import com.os.jssg.utils.FileUtils;
+import com.os.jssg.utils.HTMLUtils;
+import com.os.jssg.utils.TextUtils;
 import lombok.NoArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +20,7 @@ public class HTMLProcessor {
 
     public void convertToHTML(String pathStr, String outputPath) {
         try{
-            pathStr = FileUtils.processText(pathStr);
+            pathStr = TextUtils.processText(pathStr);
 
             Path filePath = Paths.get(pathStr);
 
@@ -29,7 +31,7 @@ public class HTMLProcessor {
 
             // if input is a file
             if (pathStr.lastIndexOf(".txt") > 0) {
-                Map htmlMap = FileUtils.convertTextToHTML(pathStr);
+                Map htmlMap = HTMLUtils.convertTextToHTML(pathStr);
 
                 // reset dist and create one if not exists
                 FileUtils.resetDist();
@@ -43,7 +45,7 @@ public class HTMLProcessor {
                 FileUtils.resetDist();
 
                 Files.list(filePath).forEach(f->{
-                    Map htmlMap = FileUtils.convertTextToHTML(f.toAbsolutePath().toString());
+                    Map htmlMap = HTMLUtils.convertTextToHTML(f.toAbsolutePath().toString());
                     try {
                         FileUtils.createHTMLFile(htmlMap, outputPath);
                     } catch (IOException e) {
