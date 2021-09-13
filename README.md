@@ -50,11 +50,18 @@ Open Windows Terminal -> jssg -v
 * Allow the user to specify an input file or folder to be processed, using --input or -i . Then it generates one .html output file for each input file and the filename is based on the title of the story’s header.
 
 
-* jssg places all output into a ./dist folder by default. Each time the tool is run, an existing dist folder should first be removed so that dist always contains the last output. For example, if I run --input on a file “Silver Blaze.txt”
+* jssg places all output into a ./dist folder by default. Each time the tool is run, an existing dist folder should first be removed so that dist always contains the last output. For example, if I run --input on a file “Silver Blaze.txt”, them Silver Blaze.html is generated (Opt. 1)
 
 
-* If --output or -o werent’s specified, dist will be used. If the user specifies a different output path (--output or -o), jssg will use that, it also prints an error if the specified output path is not a valid directory.
+* If --output or -o werent’s specified, dist will be used. If the user specifies a different output path (--output or -o), jssg will use that, it also prints an error if the specified output path is not a valid directory. (Opt. 2)
 
+
+* If the user specifies a folder for the input, Jssg automatically generates an index.html file, which has relative links to each of the generated HTML files. (Opt. 5)
+
+
+## Demo
+
+Please visit my blog to view demos of the features: https://tracy016.medium.com/osd600-build-a-static-site-generator-with-picocli-c34bfb8a33e4
 
 ## License
 
