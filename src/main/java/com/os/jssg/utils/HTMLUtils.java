@@ -40,7 +40,7 @@ public class HTMLUtils {
         StringBuilder sb = new StringBuilder();
 
         for(String f: fileNames){
-            sb.append("<a href=\"/"+f+".html"+"\"><h4 style=\"color: blue; text-align: center;font-weight:400\">"+f+"</h4></a>");
+            sb.append("<a href=\"/static-site-generator/"+f+".html"+"\"><h4 style=\"color: blue; text-align: center;font-weight:400\">"+f+"</h4></a>");
         }
         return sb.toString();
     }
