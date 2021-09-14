@@ -28,35 +28,29 @@ cd ./static-site-generator
 ```
 
 ```
-Right click on jssg.bat -> edit -> change D:\SchoolWork\OSD600\temp\static-site-generator\target\jssg-0.0.1-SNAPSHOT.jar to your absolute path where the jssg-0.0.1-SNAPSHOT.jar locates 
+Right click on jssg.bat -> edit -> change D:\SchoolWork\OSD600\static-site-generator\target\jssg-0.0.1-SNAPSHOT.jar to your absolute path where the jssg-0.0.1-SNAPSHOT.jar locates 
 Save
 ```
 
-* Install jssg to your path
-
+* Run jssg
 ```
-Start -> Edit the system environment variables -> Environment Variables -> Path -> Edit -> New -> add your absolute path where jssg.bat locates -> OK
-```
-
-* Test jssg
-```
-Open Windows Terminal -> jssg -v
+Open Windows Terminal -> jssg -h
 ```
 
 ## Features
-* Display the version of the tool and --help to show a list of command lines
+* Display the version of the tool and a list of command lines by using (--h, --v, --help, --v)
 
 
 * Allow the user to specify an input file or folder to be processed, using --input or -i . Then it generates one .html output file for each input file and the filename is based on the title of the story’s header. For example: jssg -i '.\src\main\resources\Sherlock Holmes Selected Stories\'
 
 
-* jssg places all output into a ./dist folder by default. Each time the tool is run, an existing dist folder should first be removed so that dist always contains the last output. For example, if I run --input on a file “Silver Blaze.txt”, them Silver Blaze.html is generated
+* jssg places all output into a ./dist folder by default. Each time the tool is run, an existing dist folder should first be removed so that dist always contains the last output.
 
 
-* If --output or -o werent’s specified, dist will be used. If the user specifies a different output path (--output or -o), jssg will use that, it also prints an error if the specified output path is not a valid directory. For example: jssg -i '.\src\main\resources\Sherlock Holmes Selected Stories\' -o test
+* If --output or -o werent’s specified, dist will be used. If the user specifies a different output path (--output or -o), jssg will use that, it also prints an error if the specified output path is not a valid directory.
 
 
-* If the user specifies a folder for the input, jssg automatically generates an index.html file, which has relative links to each of the generated HTML files. (Opt. 5)
+* If the user specifies a folder for the input, Jssg automatically generates an index.html file, which has relative links to each of the generated HTML files.
 
 
 ## Demo
