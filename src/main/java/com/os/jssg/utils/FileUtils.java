@@ -50,6 +50,7 @@ public class FileUtils {
 
     public static void resetDist() throws IOException {
         Path distPath = Paths.get("./dist");
+
         if(Files.exists(distPath)){
             cleanDirectory(distPath);
         }
@@ -59,6 +60,8 @@ public class FileUtils {
     }
 
     public static void createIndexHTML(List<String>fileNames,  String outputPathStr)throws IOException{
+        StringBuilder sb = new StringBuilder();
+
         Path outputPath = Paths.get(outputPathStr);
 
         if(!Files.exists(outputPath)){
@@ -67,8 +70,8 @@ public class FileUtils {
         }
 
         // write new html files to dist
-        StringBuilder sb = new StringBuilder();
-        String bodyContent = FileUtils.generateStoriesHTML(fileNames);
+        String bodyContent = HTMLUtils.convertFileNamesToHTMLMenu(fileNames);
+
         sb.append("<!doctype html>\n" +
                 "<html lang=\"en\">\n" +
                 "<head>\n" +
@@ -79,25 +82,15 @@ public class FileUtils {
                 "        integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\"></head>\n" +
                 "<body class=\"container d-flex flex-column justify-content\" style=\"background: #161f27\">\n" +
                 "<h1 style=\"color: white; text-align: center;margin-bottom:30px;\">Generated Pages</h1>");
+
         sb.append(bodyContent).append("</body></html>");
 
         Path path = Paths.get(outputPath.toString() +"\\"+ "index.html");
-
 
         byte[] strToBytes = sb.toString().getBytes();
 
         Files.write(path, strToBytes);
     }
-
-    public static String generateStoriesHTML(List<String>fileNames){
-        StringBuilder sb = new StringBuilder();
-
-        for(String f: fileNames){
-            sb.append("<a href=\"/"+f+".html"+"\"><h4 style=\"color: blue; text-align: center;font-weight:400\">"+f+"</h4></a>");
-        }
-        return sb.toString();
-    }
-
 
 }
 
