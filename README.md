@@ -74,7 +74,7 @@ Command line's features: https://tracy016.medium.com/osd600-build-a-static-site-
 This project is licensed under the [MIT] License - see the LICENSE.md file for details
 
 ## Author
-### Trang Nguyen (Tracy)
+#### Trang Nguyen (Tracy)
 
 ## Acknowledgment
 * [Picocli Document](https://picocli.info/)
