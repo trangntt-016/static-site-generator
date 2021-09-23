@@ -1,6 +1,7 @@
 package com.os.jssg.processor;
 
 import com.os.jssg.utils.HTMLUtils;
+import com.os.jssg.utils.MDUtils;
 import com.os.jssg.utils.TextUtils;
 import lombok.NoArgsConstructor;
 import org.slf4j.Logger;
@@ -30,7 +31,7 @@ public class HTMLProcessor {
                 return;
             }
 
-            // if input is a file
+            // if input is a txt file
             if (pathStr.lastIndexOf(".txt") > 0) {
                 Map htmlMap = HTMLUtils.convertTextToHTML(pathStr);
 
@@ -39,6 +40,15 @@ public class HTMLProcessor {
 
                 HTMLUtils.createHTMLFile(htmlMap, outputPath);
 
+            }
+            // if input is a md file
+            else if(pathStr.lastIndexOf(".md") > 0){
+                Map htmlMap = MDUtils.convertMdToHTML(pathStr);
+
+                // reset dist and create one if not exists
+                HTMLUtils.resetDist();
+
+                HTMLUtils.createHTMLFile(htmlMap, outputPath);
             }
             // if input is a folder
             else {
