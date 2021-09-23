@@ -6,6 +6,7 @@ A simple Static Site Generator (SSG) for generating a complete HTML website from
 * [Picocli 4.6.1](https://picocli.info/)
 * [Java 11](https://www.java.com/en/)
 * [Maven](https://maven.apache.org/)
+* PowerShell
 
 ## Getting Started
 ### Prerequisites
