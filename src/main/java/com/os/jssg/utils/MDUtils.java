@@ -7,8 +7,11 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class MDUtils {
     private static final Logger logger = LoggerFactory.getLogger(HTMLUtils.class);
@@ -51,12 +54,23 @@ public class MDUtils {
 
         StringBuilder sb = new StringBuilder();
 
+
         for(int i = 0; i < lines.length; i++){
-            if(lines[i].contains("# ")){
+            if(lines[i].length()> 0 && lines[i].substring(0,2).equals("# ")){
                 sb.append("<h1>").append(lines[i].replace("#","")).append("</h1>").append("<br/>");
             }
             else if(lines[i].length()==0){
                 sb.append("<br/>");
+            }
+            // Add support for inline <code> blocks.
+            else if(lines[i].contains("`")){
+                // Parse the code blocks after a single backtick
+                List<String> codeTokens = Arrays.stream(lines[i].split("`")).map(c-> c.trim()).collect(Collectors.toList());
+
+                String afterCode = (codeTokens.size() > 4 && !codeTokens.get(4).isEmpty())?("<p>"+codeTokens.get(4)+"</p>"):"";
+
+                // get rendered as <code>...text...</code>
+                sb.append("<code>").append(codeTokens.get(1)).append("</code>").append(afterCode).append("</br>");
             }
             else{
                 sb.append("<p>").append(lines[i]).append("</p>").append("<br/>");
