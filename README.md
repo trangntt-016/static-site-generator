@@ -21,27 +21,27 @@ A simple Static Site Generator (SSG) for generating a complete HTML website from
 
 `
 git clone https://github.com/trangntt-016/static-site-generator.git
-```
+`
 * Install jssg
 
-`
+```
 cd ./static-site-generator
-`
+```
 
 Config the .bat file
-`
+```
 Right click on jssg.bat -> edit -> change D:\SchoolWork\OSD600\static-site-generator\target\jssg-0.0.1-SNAPSHOT.jar to your absolute path where the jssg-0.0.1-SNAPSHOT.jar locates 
 Save
-`
+```
 
 Config the system environment
-`
+```
 Start -> Edit system environment variables -> Environment variables -> User variables: Path -> New -> (Absolute path where your jssg.bat file locates)-> ok
 
 Then, look at the 2nd block: system variables: Path -> New -> (Absolute path where your jssg.bat file locates)-> ok
 
 Ok -> Apply -> Ok
-`
+```
 
 * Run jssg
 `
