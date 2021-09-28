@@ -6,6 +6,7 @@ A simple Static Site Generator (SSG) for generating a complete HTML website from
 * [Picocli 4.6.1](https://picocli.info/)
 * [Java 11](https://www.java.com/en/)
 * [Maven](https://maven.apache.org/)
+* PowerShell
 
 ## Getting Started
 ### Prerequisites
@@ -65,9 +66,19 @@ Open Windows Terminal -> jssg -h
 
 ## Demo
 
-https://trangntt-016.github.io/static-site-generator/
+Output: https://trangntt-016.github.io/static-site-generator/
 
-Command line's features: https://tracy016.medium.com/osd600-build-a-static-site-generator-with-picocli-c34bfb8a33e4
+Features:
+
+- Display version of the tool: 
+<img src="https://github.com/trangntt-016/static-site-generator/blob/main/src/main/resources/OSDGIF/2021-09-09%2020-25-30.gif">
+
+- Automatically generate various HTML files from .txt files based on the argument
+<img src="https://github.com/trangntt-016/static-site-generator/blob/main/src/main/resources/OSDGIF/2021-09-14%2010-07-16_Trim.gif">
+
+<img src="https://github.com/trangntt-016/static-site-generator/blob/main/src/main/resources/OSDGIF/2021-09-09%2021-12-31.gif">
+
+
 
 ## License
 
