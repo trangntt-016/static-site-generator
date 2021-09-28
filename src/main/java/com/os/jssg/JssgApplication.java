@@ -25,6 +25,9 @@ class JssgApplication implements Runnable {
     @CommandLine.Option(names = {"-o", "--output"}, defaultValue = "dist", description = "Specified different output path")
     private String outputPath;
 
+    @CommandLine.Option(names = {"-l", "--lang"}, defaultValue = "en-CA", description = "Specified the language to use when generating the lang attribute on the root <html> element")
+    private String language;
+
     @SneakyThrows
     public void run() {
         if(versionHelpRequested){
@@ -35,7 +38,7 @@ class JssgApplication implements Runnable {
         }
         else if(filePath!=null){
             HTMLProcessor processor = new HTMLProcessor();
-            processor.convertToHTML(filePath, outputPath);
+            processor.convertToHTML(filePath, outputPath, language);
         }
     }
 

@@ -14,7 +14,7 @@ import java.util.Map;
 public class HTMLUtils {
     private static final Logger logger = LoggerFactory.getLogger(HTMLUtils.class);
 
-    public static Map<String, String> convertTextToHTML(String pathStr){
+    public static Map<String, String> convertTextToHTML(String pathStr, String language){
         Map htmlMap = new HashMap();
         StringBuilder sb = new StringBuilder();
 
@@ -27,7 +27,7 @@ public class HTMLUtils {
 
         // Complete HTML file
         String html = "<!doctype html>\n" +
-                "<html lang=\"en\">\n" +
+                "<html lang="+language+">\n" +
                 "<head>\n" +
                 "  <meta charset=\"utf-8\">\n" +
                 "  <title>" + title + "</title>\n" +
