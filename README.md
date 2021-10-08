@@ -64,22 +64,8 @@ Open Windows Terminal -> jssg -h
 * If the user specifies a folder for the input, Jssg automatically generates an index.html file, which has relative links to each of the generated HTML files.
 
 * Add an optional -l, --lang, which indicates the language to use when generating the lang attribute on the root <html> element. For example, --lang fr would mean that the HTML documents are in French, and would include <html lang="fr">, while -l pt-BR would mean the text is using Brazilian Portuguese: <html lang="pt-BR">. By default, use en-CA for Canadian English.
-
-* Add support for inline `<code>` blocks. In Markdown, enclosing text in a single backtick causes the text to HTML to get rendered as `<code>...text...</code>`.
-
-* Add an optional -c, --config which indicates the path to a JSON config file. For example: jssg -c '.\src\main\resources\Sherlock Holmes Selected Stories'
-
-  ```json
-  // ssg-config.json
-  {
-    "input": ".\\src\\main\\resources\\Sherlock Holmes Selected Stories\\",
-    "output": "./build",
-    "randomKey": "nullptr",
-    "missing-lang": "fr-CA",
-  }
-  ```
-
   
+* Add support for inline `<code>` blocks. In Markdown, enclosing text in a single backtick causes the text to HTML to get rendered as `<code>...text...</code>`.
 
 
 ## Demo
