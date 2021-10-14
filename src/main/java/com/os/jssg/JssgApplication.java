@@ -1,7 +1,5 @@
 package com.os.jssg;
 
-import com.google.gson.Gson;
-import com.google.gson.stream.JsonReader;
 import com.os.jssg.processor.HTMLProcessor;
 
 
@@ -9,7 +7,6 @@ import com.os.jssg.utils.JSonUtils;
 import lombok.SneakyThrows;
 import picocli.CommandLine;
 
-import java.io.FileReader;
 
 
 @CommandLine.Command(name = "jssg",

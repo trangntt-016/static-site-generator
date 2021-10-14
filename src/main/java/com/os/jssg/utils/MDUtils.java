@@ -3,10 +3,6 @@ package com.os.jssg.utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -21,11 +17,11 @@ public class MDUtils {
         StringBuilder sb = new StringBuilder();
 
         // read text and convert break line to <br/>
-        String convertedText =TextUtils.readText(pathStr);
+        String convertedText = new TextUtils().readText(pathStr);
 
-        String title = MDUtils.getTitleFromReadMe(convertedText).replace("# ","");
+        String title = new MDUtils().getTitleFromReadMe(convertedText).replace("# ","");
 
-        String body = MDUtils.getBodyFromReadMe(convertedText);
+        String body = new MDUtils().getBodyFromReadMe(convertedText);
 
         // Complete HTML file
         String html = "<!doctype html>\n" +
@@ -43,13 +39,13 @@ public class MDUtils {
         return Map.of("title",title,"body",html);
     }
 
-    public static String getTitleFromReadMe(String convertedText){
+    public  String getTitleFromReadMe(String convertedText){
         String[] pDivs = convertedText.split("<br/>");
 
-        return TextUtils.toCapitalize(pDivs[0]).trim();
+        return new TextUtils().toCapitalize(pDivs[0]).trim();
     }
 
-    public static String getBodyFromReadMe(String convertedText){
+    public  String getBodyFromReadMe(String convertedText){
         String[] lines = convertedText.split("<br/>");
 
         StringBuilder sb = new StringBuilder();
