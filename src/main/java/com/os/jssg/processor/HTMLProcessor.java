@@ -18,11 +18,11 @@ import java.util.Map;
 
 @NoArgsConstructor
 public class HTMLProcessor {
-    private static final Logger logger = LoggerFactory.getLogger(HTMLProcessor.class);
+    private final Logger logger = LoggerFactory.getLogger(HTMLProcessor.class);
 
     public void convertToHTML(String pathStr, String outputPath, String language) {
         try{
-            pathStr = TextUtils.processText(pathStr);
+            pathStr = new TextUtils().processText(pathStr);
 
             Path filePath = Paths.get(pathStr);
 
@@ -33,40 +33,40 @@ public class HTMLProcessor {
 
             // if input is a txt file
             if (pathStr.lastIndexOf(".txt") > 0) {
-                Map htmlMap = HTMLUtils.convertTextToHTML(pathStr, language);
+                Map htmlMap = new HTMLUtils().convertTextToHTML(pathStr, language);
 
                 // reset dist and create one if not exists
-                HTMLUtils.resetDist();
+                new HTMLUtils().resetDist();
 
-                HTMLUtils.createHTMLFile(htmlMap, outputPath);
+                new HTMLUtils().createHTMLFile(htmlMap, outputPath);
 
             }
             // if input is a md file
             else if(pathStr.lastIndexOf(".md") > 0){
-                Map htmlMap = MDUtils.convertMdToHTML(pathStr);
+                Map htmlMap = new MDUtils().convertMdToHTML(pathStr);
 
                 // reset dist and create one if not exists
-                HTMLUtils.resetDist();
+                new HTMLUtils().resetDist();
 
-                HTMLUtils.createHTMLFile(htmlMap, outputPath);
+                new HTMLUtils().createHTMLFile(htmlMap, outputPath);
             }
             // if input is a folder
             else {
                 // reset dist and create one if not exists
-                HTMLUtils.resetDist();
+                new HTMLUtils().resetDist();
                 List<String>HTMLFileNames = new ArrayList<>();
 
                 Files.list(filePath).forEach(f->{
-                    Map htmlMap = HTMLUtils.convertTextToHTML(f.toAbsolutePath().toString(), language);
+                    Map htmlMap = new HTMLUtils().convertTextToHTML(f.toAbsolutePath().toString(), language);
                     HTMLFileNames.add(htmlMap.get("title").toString());
                     try {
-                        HTMLUtils.createHTMLFile(htmlMap, outputPath);
+                        new HTMLUtils().createHTMLFile(htmlMap, outputPath);
 
                     } catch (IOException e) {
                         logger.error(e.getMessage());
                     }
                 });
-                HTMLUtils.createIndexHTML(HTMLFileNames, outputPath);
+                new HTMLUtils().createIndexHTML(HTMLFileNames, outputPath);
             }
         }
         catch(IOException ex){

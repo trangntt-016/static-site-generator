@@ -21,7 +21,7 @@ public class MDUtils {
         StringBuilder sb = new StringBuilder();
 
         // read text and convert break line to <br/>
-        String convertedText =TextUtils.readText(pathStr);
+        String convertedText = new TextUtils().readText(pathStr);
 
         String title = MDUtils.getTitleFromReadMe(convertedText).replace("# ","");
 
@@ -46,7 +46,7 @@ public class MDUtils {
     public static String getTitleFromReadMe(String convertedText){
         String[] pDivs = convertedText.split("<br/>");
 
-        return TextUtils.toCapitalize(pDivs[0]).trim();
+        return new TextUtils().toCapitalize(pDivs[0]).trim();
     }
 
     public static String getBodyFromReadMe(String convertedText){
