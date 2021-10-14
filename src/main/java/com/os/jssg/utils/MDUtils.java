@@ -14,9 +14,9 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class MDUtils {
-    private static final Logger logger = LoggerFactory.getLogger(HTMLUtils.class);
+    private final Logger logger = LoggerFactory.getLogger(HTMLUtils.class);
 
-    public static Map<String, String> convertMdToHTML(String pathStr){
+    public Map<String, String> convertMdToHTML(String pathStr){
         Map htmlMap = new HashMap();
         StringBuilder sb = new StringBuilder();
 

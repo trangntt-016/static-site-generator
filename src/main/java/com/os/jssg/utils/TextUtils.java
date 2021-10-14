@@ -7,17 +7,16 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Locale;
 
 public class TextUtils {
-    private static final Logger logger = LoggerFactory.getLogger(TextUtils.class);
+    private final Logger logger = LoggerFactory.getLogger(TextUtils.class);
 
-    public static String processText(String text) {
+    public String processText(String text) {
         return text.replace("-", " ").replace("./", "").replace("'", "").replace("\"", "");
     }
 
-    public static String readText(String pathStr) {
+    public String readText(String pathStr) {
         StringBuilder sb = new StringBuilder();
 
         try (BufferedReader br = new BufferedReader(new FileReader(pathStr))) {
@@ -40,7 +39,7 @@ public class TextUtils {
         return sb.toString();
     }
 
-    public static String toCapitalize(String title){
+    public String toCapitalize(String title){
         StringBuilder sb = new StringBuilder();
         String[] strings = title.split(" ");
 
@@ -52,13 +51,13 @@ public class TextUtils {
 
     }
 
-    public static String getTitleFromText(String convertedText){
+    public  String getTitleFromText(String convertedText){
         String[] pDivs = convertedText.split("<br/>");
 
-        return TextUtils.toCapitalize(pDivs[0]).trim();
+        return new TextUtils().toCapitalize(pDivs[0]).trim();
     }
 
-    public static String getBodyFromText(String convertedText){
+    public String getBodyFromText(String convertedText){
         String[] lines = convertedText.split("<br/>");
 
 

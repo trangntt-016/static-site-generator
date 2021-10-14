@@ -12,18 +12,18 @@ import java.util.List;
 import java.util.Map;
 
 public class HTMLUtils {
-    private static final Logger logger = LoggerFactory.getLogger(HTMLUtils.class);
+    private final Logger logger = LoggerFactory.getLogger(HTMLUtils.class);
 
-    public static Map<String, String> convertTextToHTML(String pathStr, String language){
+    public Map<String, String> convertTextToHTML(String pathStr, String language){
         Map htmlMap = new HashMap();
         StringBuilder sb = new StringBuilder();
 
         // read text and convert break line to <br/>
-        String convertedText =TextUtils.readText(pathStr);
+        String convertedText = new TextUtils().readText(pathStr);
 
-        String title = TextUtils.getTitleFromText(convertedText);
+        String title = new TextUtils().getTitleFromText(convertedText);
 
-        String body = TextUtils.getBodyFromText(convertedText);
+        String body = new TextUtils().getBodyFromText(convertedText);
 
         // Complete HTML file
         String html = "<!doctype html>\n" +
@@ -41,7 +41,7 @@ public class HTMLUtils {
         return Map.of("title",title,"body",html);
     }
 
-    public static String convertFileNamesToHTMLMenu(List<String> fileNames){
+    public String convertFileNamesToHTMLMenu(List<String> fileNames){
         StringBuilder sb = new StringBuilder();
 
         for(String f: fileNames){
@@ -50,7 +50,7 @@ public class HTMLUtils {
         return sb.toString();
     }
 
-    public static void cleanDirectory(Path filePath) {
+    public void cleanDirectory(Path filePath) {
         try {
             Files.list(filePath).forEach(f -> {
                 try {
@@ -67,7 +67,7 @@ public class HTMLUtils {
 
 
 
-    public static void createHTMLFile(Map<String, String>htmlMap, String outputPathStr) throws IOException {
+    public void createHTMLFile(Map<String, String>htmlMap, String outputPathStr) throws IOException {
         Path outputPath = Paths.get(outputPathStr);
 
         if(!Files.exists(outputPath)){
@@ -84,7 +84,7 @@ public class HTMLUtils {
         Files.write(path, strToBytes);
     }
 
-    public static void resetDist() throws IOException {
+    public void resetDist() throws IOException {
         Path distPath = Paths.get("./dist");
 
         if(Files.exists(distPath)){
@@ -95,7 +95,7 @@ public class HTMLUtils {
         }
     }
 
-    public static void createIndexHTML(List<String>fileNames,  String outputPathStr)throws IOException{
+    public void createIndexHTML(List<String>fileNames,  String outputPathStr)throws IOException{
         StringBuilder sb = new StringBuilder();
 
         Path outputPath = Paths.get(outputPathStr);
@@ -106,7 +106,7 @@ public class HTMLUtils {
         }
 
         // write new html files to dist
-        String bodyContent = HTMLUtils.convertFileNamesToHTMLMenu(fileNames);
+        String bodyContent = new HTMLUtils().convertFileNamesToHTMLMenu(fileNames);
 
         sb.append("<!doctype html>\n" +
                 "<html lang=\"en\">\n" +

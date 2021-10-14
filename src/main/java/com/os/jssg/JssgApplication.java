@@ -5,6 +5,7 @@ import com.google.gson.stream.JsonReader;
 import com.os.jssg.processor.HTMLProcessor;
 
 
+import com.os.jssg.utils.JSonUtils;
 import lombok.SneakyThrows;
 import picocli.CommandLine;
 
@@ -50,8 +51,7 @@ public class JssgApplication implements Runnable {
         // Check for `--config` flag should always be after `--version` and `--help` flag
         else if(config != null){
             // parse JSON
-            Gson gson = new Gson();
-            JssgApplication args = gson.fromJson(new JsonReader(new FileReader(config)), JssgApplication.class);
+            JssgApplication args = new JSonUtils().parseJSon(config);
 
             // assign values so that later on they can be used in the next if block
             input = args.input;
