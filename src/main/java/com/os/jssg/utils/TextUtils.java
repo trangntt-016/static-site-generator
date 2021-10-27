@@ -1,5 +1,6 @@
 package com.os.jssg.utils;
 
+import com.github.rjeschke.txtmark.Processor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,6 +29,31 @@ public class TextUtils {
                 } else {
                     sb.append(line).append(" ");
                 }
+            }
+
+            br.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return sb.toString();
+    }
+
+    public String readMdText(String pathStr) {
+        StringBuilder sb = new StringBuilder();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(pathStr))) {
+            String line;
+
+            while ((line = br.readLine()) != null) {
+                if(line.startsWith("``")){
+                    while(!(line += br.readLine()).endsWith("``")){
+
+                    }
+                }
+                String result = Processor.process(line);
+                sb.append(result);
             }
 
             br.close();

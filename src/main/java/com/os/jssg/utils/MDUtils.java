@@ -2,12 +2,16 @@ package com.os.jssg.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.github.rjeschke.txtmark.Processor;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import org.commonmark.node.*;
+
 
 public class MDUtils {
     private final Logger logger = LoggerFactory.getLogger(HTMLUtils.class);
@@ -17,11 +21,11 @@ public class MDUtils {
         StringBuilder sb = new StringBuilder();
 
         // read text and convert break line to <br/>
-        String convertedText = new TextUtils().readText(pathStr);
+        String convertedText = new TextUtils().readMdText(pathStr);
 
-        String title = new MDUtils().getTitleFromReadMe(convertedText).replace("# ","");
+        String title = new MDUtils().getTitleFromReadMe(convertedText);
 
-        String body = new MDUtils().getBodyFromReadMe(convertedText);
+        String body = Processor.process(convertedText);
 
         // Complete HTML file
         String html = "<!doctype html>\n" +
@@ -36,13 +40,15 @@ public class MDUtils {
                 "<body class=\"container d-flex flex-column justify-content-center\">" + body + "</body>\n" +
                 "</html>";
 
+
+
         return Map.of("title",title,"body",html);
     }
 
     public  String getTitleFromReadMe(String convertedText){
-        String[] pDivs = convertedText.split("<br/>");
+        String[] pDivs = convertedText.split("</h1>");
 
-        return new TextUtils().toCapitalize(pDivs[0]).trim();
+        return new TextUtils().toCapitalize(pDivs[0]).trim().replace("<h1>","");
     }
 
     public  String getBodyFromReadMe(String convertedText){
@@ -75,4 +81,21 @@ public class MDUtils {
         return sb.toString();
     }
 
+    class WordCountVisitor extends AbstractVisitor {
+        public int wordCount = 0;
+
+        @Override
+        public void visit(Text text) {
+            // This is called for all Text nodes. Override other visit methods for other node types.
+
+            // Count words (this is just an example, don't actually do it this way for various reasons).
+            wordCount += text.getLiteral().split("\\W+").length;
+
+            // Descend into children (could be omitted in this case because Text nodes don't have children).
+            visitChildren(text);
+        }
+    }
+
+
 }
+
