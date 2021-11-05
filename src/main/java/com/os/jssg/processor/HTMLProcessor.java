@@ -3,10 +3,6 @@ package com.os.jssg.processor;
 import com.os.jssg.utils.HTMLUtils;
 import com.os.jssg.utils.MDUtils;
 import com.os.jssg.utils.TextUtils;
-import lombok.NoArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -14,67 +10,65 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
+import lombok.NoArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @NoArgsConstructor
 public class HTMLProcessor {
-    private final Logger logger = LoggerFactory.getLogger(HTMLProcessor.class);
+  private final Logger logger = LoggerFactory.getLogger(HTMLProcessor.class);
 
-    public void convertToHTML(String pathStr, String outputPath, String language) {
-        try{
-            pathStr = new TextUtils().processText(pathStr);
+  public void convertToHTML(String pathStr, String outputPath, String language) {
+    try {
+      if (!Files.exists(Paths.get(pathStr))) {
+        logger.error("Cannot find any path with " + pathStr);
+        return;
+      }
 
-            Path filePath = Paths.get(pathStr);
+      // if input is a txt file
+      if (pathStr.lastIndexOf(".txt") > 0) {
+        Map htmlMap = new HTMLUtils().convertTextToHTML(pathStr, language);
 
-            if(!Files.exists(filePath)){
-                logger.error("Cannot find any path with " + filePath);
-                return;
-            }
+        // reset dist and create one if not exists
+        new HTMLUtils().resetDist();
 
-            // if input is a txt file
-            if (pathStr.lastIndexOf(".txt") > 0) {
-                Map htmlMap = new HTMLUtils().convertTextToHTML(pathStr, language);
+        new HTMLUtils().createHTMLFile(htmlMap, outputPath);
 
-                // reset dist and create one if not exists
-                new HTMLUtils().resetDist();
+      }
+      // if input is a md file
+      else if (pathStr.lastIndexOf(".md") > 0) {
+        Map htmlMap = new MDUtils().convertMdToHTML(pathStr);
 
-                new HTMLUtils().createHTMLFile(htmlMap, outputPath);
+        // reset dist and create one if not exists
+        new HTMLUtils().resetDist();
 
-            }
-            // if input is a md file
-            else if(pathStr.lastIndexOf(".md") > 0){
-                Map htmlMap = new MDUtils().convertMdToHTML(pathStr);
+        new HTMLUtils().createHTMLFile(htmlMap, outputPath);
+      }
+      // if input is a folder
+      else {
+        // reset dist and create one if not exists
+        new HTMLUtils().resetDist();
+        List<String> HTMLFileNames = new ArrayList<>();
 
-                // reset dist and create one if not exists
-                new HTMLUtils().resetDist();
+        Files.list(Paths.get(pathStr))
+            .forEach(
+                f -> {
+                  Map htmlMap =
+                      new HTMLUtils().convertTextToHTML(f.toAbsolutePath().toString(), language);
+                  HTMLFileNames.add(htmlMap.get("title").toString());
+                  try {
+                    new HTMLUtils().createHTMLFile(htmlMap, outputPath);
 
-                new HTMLUtils().createHTMLFile(htmlMap, outputPath);
-            }
-            // if input is a folder
-            else {
-                // reset dist and create one if not exists
-                new HTMLUtils().resetDist();
-                List<String>HTMLFileNames = new ArrayList<>();
-
-                Files.list(filePath).forEach(f->{
-                    Map htmlMap = new HTMLUtils().convertTextToHTML(f.toAbsolutePath().toString(), language);
-                    HTMLFileNames.add(htmlMap.get("title").toString());
-                    try {
-                        new HTMLUtils().createHTMLFile(htmlMap, outputPath);
-
-                    } catch (IOException e) {
-                        logger.error(e.getMessage());
-                    }
+                  } catch (IOException e) {
+                    logger.error(e.getMessage());
+                  }
                 });
-                new HTMLUtils().createIndexHTML(HTMLFileNames, outputPath);
-            }
-        }
-        catch(IOException ex){
-            logger.error(ex.getMessage());
-        }
-        catch(Exception ex){
-            logger.error(ex.getMessage());
-        }
-
+        new HTMLUtils().createIndexHTML(HTMLFileNames, outputPath);
+      }
+    } catch (IOException ex) {
+      logger.error(ex.getMessage());
+    } catch (Exception ex) {
+      logger.error(ex.getMessage());
     }
+  }
 }
