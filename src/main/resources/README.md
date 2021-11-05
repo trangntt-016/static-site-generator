@@ -2,8 +2,21 @@
 
 A simple Static Site Generator (SSG) for generating a complete HTML website from raw data and files, without having to author any HTML by hand.
 
+## Built with
+* [Picocli 4.6.1](https://picocli.info/)
+* [Java 11](https://www.java.com/en/)
+* [Maven](https://maven.apache.org/)
+* PowerShell
 
-### Using JSSG
+## Getting Started
+### Prerequisites
+* [Java 11](https://www.java.com/en/)
+* [IntelliJ](https://www.jetbrains.com/idea/download/)
+* [Maven 3.8.1](https://maven.apache.org/download.cgi)
+* [Windows 10](https://www.microsoft.com/en-ca/software-download/windows10)
+
+
+### Executing program
 * clone this github
 
 ```
