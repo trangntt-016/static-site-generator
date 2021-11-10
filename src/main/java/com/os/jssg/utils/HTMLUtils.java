@@ -15,11 +15,15 @@ public class HTMLUtils {
 
   public Map<String, String> convertTextToHTML(String pathStr, String language) {
     // read text and convert break line to <br/>
-    String convertedText = new TextUtils().readText(pathStr);
+    String convertedText = new TextUtil().readText(pathStr);
 
-    String title = new TextUtils().getTitleFromText(convertedText);
+    if(convertedText.isEmpty() || language == null){
+      return null;
+    }
 
-    String body = new TextUtils().getBodyFromText(convertedText);
+    String title = new TextUtil().getTitleFromText(convertedText);
+
+    String body = new TextUtil().getBodyFromText(convertedText);
 
     // Complete HTML file
     String html =

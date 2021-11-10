@@ -14,7 +14,9 @@ public class MDUtils {
   public Map<String, String> convertMdToHTML(String pathStr) {
 
     // read text and convert break line to <br/>
-    String convertedText = new TextUtils().readMdText(pathStr);
+    String convertedText = new TextUtil().readMdText(pathStr);
+
+    if(convertedText.isEmpty()) return null;
 
     String title = new MDUtils().getTitleFromReadMe(convertedText);
 
@@ -46,7 +48,7 @@ public class MDUtils {
   public String getTitleFromReadMe(String convertedText) {
     String[] pDivs = convertedText.split("</h1>");
 
-    return new TextUtils().toCapitalize(pDivs[0]).trim().replace("<h1>", "");
+    return new TextUtil().toCapitalize(pDivs[0]).trim().replace("<h1>", "");
   }
 
   public String getBodyFromReadMe(String convertedText) {

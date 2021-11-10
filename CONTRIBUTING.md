@@ -12,6 +12,10 @@ guidelines including legal contributor agreement:
 * To use Formatter and Eslint in this project, please read this
   detailed [instruction](https://tracy016.medium.com/osd600-adding-static-analysis-toolings-b8488bf239da)
 
+* To enable "auto-test", enable "Toggle auto-test" in run dialog box
+![image](https://intellij-support.jetbrains.com/hc/user_images/35Aia3Dk3aHoTBe1gB8WIw.png)
+  This will start auto testing. Although this works fine, it takes time to build the project even when my project is tiny so for larger projects it will certainly take very long time to complete the build and execute tests.
+
 ## Legal stuff
 
 As a contributor:
