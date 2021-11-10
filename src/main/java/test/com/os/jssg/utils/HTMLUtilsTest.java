@@ -5,7 +5,7 @@ import org.assertj.core.api.AbstractThrowableAssert;
 import org.junit.jupiter.api.Test;
 import test.com.os.jssg.TestUtils;
 
-import java.io.FileNotFoundException;
+
 import java.io.IOException;
 import java.util.Map;
 
@@ -18,7 +18,7 @@ public class HTMLUtilsTest {
     @Test
     public void shouldReturnMapFromValidPathAndValidLanguage() throws IOException {
         // GIVEN
-        String path = TestUtils.generateRandomPath();
+        String path = TestUtils.generateRandomInputPath();
         String language = "en";
 
         // WHEN
@@ -44,7 +44,7 @@ public class HTMLUtilsTest {
     @Test
     public void shouldReTurnNullFromValidPathAndInValidLanguage() throws IOException {
         // GIVEN
-        String path = TestUtils.generateRandomPath();
+        String path = TestUtils.generateRandomInputPath();
         String language = null;
 
         // WHEN

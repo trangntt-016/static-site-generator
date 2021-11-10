@@ -15,7 +15,7 @@ public class TextUtilsTest {
     @Test
     void shouldReturnConvertedTextFromAValidPath() throws IOException {
         // GIVEN
-        String path = TestUtils.generateRandomPath();
+        String path = TestUtils.generateRandomInputPath();
 
         // WHEN
         String convertedText = textUtils.readText(path);

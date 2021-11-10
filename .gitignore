@@ -3,6 +3,8 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+/src/main/resources/coverage-report/
+/src/main/resources/output/
 
 ### STS ###
 .apt_generated

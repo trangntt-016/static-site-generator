@@ -18,7 +18,7 @@ public class MDUtilsTest {
     @Test
     public void shouldReturnMapFromValidPath() throws IOException {
         // GIVEN
-        String path = TestUtils.generateRandomPath();
+        String path = TestUtils.generateRandomInputPath();
 
         // WHEN
         Map<String, String> result = utils.convertMdToHTML(path);
@@ -38,7 +38,6 @@ public class MDUtilsTest {
         // THEN
         assertThat(result).isNull();
     }
-
 
 
     @Test
