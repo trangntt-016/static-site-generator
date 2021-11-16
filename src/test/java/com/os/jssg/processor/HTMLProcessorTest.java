@@ -17,29 +17,9 @@ public class HTMLProcessorTest {
     private HTMLProcessor processor = new HTMLProcessor();
     private HTMLUtils utils = new HTMLUtils();
 
-    @Test
-    void shouldCreateNewFileFromValidPathAndValidOutputPathAndValidLanguage() throws IOException {
-        String inputPath = TestUtils.generateRandomInputPath();
-
-        String outputPath = TestUtils.generateOutputPath();
-
-        String language = "en";
-
-        // WHEN
-        processor.convertToHTML(inputPath, outputPath, language);
-
-        // THEN
-        List<Path>files = Files.list(Paths.get(outputPath)).collect(Collectors.toList());
-
-        assertThat(files.size()).isGreaterThan(0);
-
-        // clean directory after the test
-        utils.cleanDirectory(Paths.get(outputPath));
-    }
-
 //    @Test
-//    void shouldCreateNoFilesFromInValidPathAndValidOutputPathAndValidLanguage() throws IOException {
-//        String inputPath = "invalid filepath";
+//    void shouldCreateNewFileFromValidPathAndValidOutputPathAndValidLanguage() throws IOException {
+//        String inputPath = TestUtils.generateRandomInputPath();
 //
 //        String outputPath = TestUtils.generateOutputPath();
 //
@@ -49,32 +29,52 @@ public class HTMLProcessorTest {
 //        processor.convertToHTML(inputPath, outputPath, language);
 //
 //        // THEN
-//        List<Path> filesPath= Files.list(Paths.get("./src/main/resources/output")).collect(Collectors.toList());
+//        List<Path>files = Files.list(Paths.get(outputPath)).collect(Collectors.toList());
 //
-//        assertThat(filesPath).hasSize(0);
-//
-//        // clean directory after the test
-//        utils.cleanDirectory(Paths.get(outputPath));
-//    }
-//
-//    @Test
-//    void shouldCreateNoFilesFromValidPathAndInvalidOutputPathAndValidLanguage() throws IOException {
-//        String inputPath = TestUtils.generateRandomInputPath();
-//
-//        String outputPath = "invalid output";
-//
-//        String language = "en";
-//
-//        // WHEN
-//        processor.convertToHTML(inputPath, outputPath, language);
-//
-//        // THEN
-//        List<Path> filesPath= Files.list(Paths.get("./src/main/resources/output")).collect(Collectors.toList());
-//
-//        assertThat(filesPath).hasSize(0);
+//        assertThat(files.size()).isGreaterThan(0);
 //
 //        // clean directory after the test
 //        utils.cleanDirectory(Paths.get(outputPath));
 //    }
+
+    @Test
+    void shouldCreateNoFilesFromInValidPathAndValidOutputPathAndValidLanguage() throws IOException {
+        String inputPath = "invalid filepath";
+
+        String outputPath = TestUtils.generateOutputPath();
+
+        String language = "en";
+
+        // WHEN
+        processor.convertToHTML(inputPath, outputPath, language);
+
+        // THEN
+        List<Path> filesPath= Files.list(Paths.get("./src/main/resources/output")).collect(Collectors.toList());
+
+        assertThat(filesPath).hasSize(0);
+
+        // clean directory after the test
+        utils.cleanDirectory(Paths.get(outputPath));
+    }
+
+    @Test
+    void shouldCreateNoFilesFromValidPathAndInvalidOutputPathAndValidLanguage() throws IOException {
+        String inputPath = TestUtils.generateRandomInputPath();
+
+        String outputPath = "invalid output";
+
+        String language = "en";
+
+        // WHEN
+        processor.convertToHTML(inputPath, outputPath, language);
+
+        // THEN
+        List<Path> filesPath= Files.list(Paths.get("./src/main/resources/output")).collect(Collectors.toList());
+
+        assertThat(filesPath).hasSize(0);
+
+        // clean directory after the test
+        utils.cleanDirectory(Paths.get(outputPath));
+    }
 
 }
