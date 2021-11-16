@@ -26,10 +26,10 @@ public class HTMLProcessorTest {
         String language = "en";
 
         // WHEN
-        //processor.convertToHTML(inputPath, outputPath, language);
+        processor.convertToHTML(inputPath, outputPath, language);
 
         // THEN
-        //Path folderPath = Files.list(Paths.get(outputPath)).findFirst().get();
+        Path folderPath = Files.list(Paths.get(outputPath)).findFirst().get();
 
         //assertThat(folderPath).exists().toString().endsWith(".html");
 
