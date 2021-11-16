@@ -77,7 +77,7 @@ public class HTMLUtils {
                 }
               });
     } catch (Exception ex) {
-      // logger.error(ex.getMessage());
+      ex.printStackTrace();
     }
   }
 

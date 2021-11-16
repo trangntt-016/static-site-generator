@@ -28,6 +28,7 @@ public class HTMLProcessorTest {
         // WHEN
         processor.convertToHTML(inputPath, outputPath, language);
 
+        utils.cleanDirectory(Paths.get(outputPath));
     }
 
     @Test
