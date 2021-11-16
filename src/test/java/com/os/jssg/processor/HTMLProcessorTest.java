@@ -29,7 +29,7 @@ public class HTMLProcessorTest {
         processor.convertToHTML(inputPath, outputPath, language);
 
         // THEN
-        Path folderPath = Files.list(Paths.get(outputPath)).findFirst().get();
+        Files.list(Paths.get(outputPath));
 
         //assertThat(folderPath).exists().toString().endsWith(".html");
 
