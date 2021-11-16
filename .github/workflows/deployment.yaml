@@ -17,4 +17,4 @@ jobs:
           java-version: 11
 
       - name: Build project with Maven
-        run: mvn clean -DskipTests
+        run: mvn test
