@@ -35,7 +35,7 @@ public class TestUtils {
         }
         Files.createDirectories(Paths.get("./src/main/resources/output"));
 
-        return null;
+        return folderPath.toString();
     }
 
     public static String generateMDFile() throws IOException {
