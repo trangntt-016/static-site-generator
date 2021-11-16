@@ -30,10 +30,7 @@ public class TestUtils {
     public static String generateOutputPath() throws IOException {
         Path folderPath = Paths.get("./src/main/resources/output");
 
-        if (Files.exists(folderPath)) {
-            return folderPath.toString();
-        }
-        Files.createDirectories(Paths.get("./src/main/resources/output"));
+        Files.createDirectories(folderPath);
 
         return folderPath.toString();
     }
