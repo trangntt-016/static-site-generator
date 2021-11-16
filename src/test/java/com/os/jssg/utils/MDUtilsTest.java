@@ -1,10 +1,9 @@
-package test.com.os.jssg.utils;
+package com.os.jssg.utils;
 
 
-import com.os.jssg.utils.MDUtils;
 import org.assertj.core.api.AbstractThrowableAssert;
 import org.junit.jupiter.api.Test;
-import test.com.os.jssg.TestUtils;
+import com.os.jssg.TestUtils;
 
 import java.io.IOException;
 import java.util.Map;

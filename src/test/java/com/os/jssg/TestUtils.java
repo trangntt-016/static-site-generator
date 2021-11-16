@@ -1,4 +1,4 @@
-package test.com.os.jssg;
+package com.os.jssg;
 
 import java.io.IOException;
 import java.nio.file.Files;

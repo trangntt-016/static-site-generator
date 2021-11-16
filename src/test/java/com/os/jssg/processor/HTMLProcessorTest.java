@@ -1,9 +1,8 @@
-package test.com.os.jssg.processor;
+package com.os.jssg.processor;
 
-import com.os.jssg.processor.HTMLProcessor;
 import com.os.jssg.utils.HTMLUtils;
 import org.junit.jupiter.api.Test;
-import test.com.os.jssg.TestUtils;
+import com.os.jssg.TestUtils;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,9 +1,7 @@
-package test.com.os.jssg.utils;
-
-import com.os.jssg.utils.TextUtil;
+package com.os.jssg.utils;
 
 import org.junit.jupiter.api.Test;
-import test.com.os.jssg.TestUtils;
+import com.os.jssg.TestUtils;
 
 import java.io.IOException;
 
