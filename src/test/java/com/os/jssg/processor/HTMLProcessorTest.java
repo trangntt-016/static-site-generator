@@ -28,13 +28,6 @@ public class HTMLProcessorTest {
         // WHEN
         processor.convertToHTML(inputPath, outputPath, language);
 
-        // THEN
-        // List<Path>files = Files.list(Paths.get(outputPath)).collect(Collectors.toList());
-
-        // assertThat(files.size()).isGreaterThan(0);
-
-        // clean directory after the test
-        // utils.cleanDirectory(Paths.get(outputPath));
     }
 
     @Test
