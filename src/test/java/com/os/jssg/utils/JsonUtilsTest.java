@@ -1,12 +1,9 @@
-package test.com.os.jssg.utils;
+package com.os.jssg.utils;
 
 
 import com.os.jssg.JssgApplication;
-import com.os.jssg.utils.JSonUtils;
-import org.assertj.core.api.AbstractThrowableAssert;
-import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.Test;
-import test.com.os.jssg.TestUtils;
+import com.os.jssg.TestUtils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

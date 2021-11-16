@@ -1,9 +1,8 @@
-package test.com.os.jssg.processor;
+package com.os.jssg.processor;
 
-import com.os.jssg.processor.HTMLProcessor;
 import com.os.jssg.utils.HTMLUtils;
 import org.junit.jupiter.api.Test;
-import test.com.os.jssg.TestUtils;
+import com.os.jssg.TestUtils;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -26,15 +25,8 @@ public class HTMLProcessorTest {
 
         String language = "en";
 
-        // WHEN
         processor.convertToHTML(inputPath, outputPath, language);
-
-        // THEN
-        Path folderPath = Files.list(Paths.get("./src/main/resources/output")).findFirst().get();
-
-        assertThat(folderPath).exists().toString().endsWith(".html");
-
-        // clean directory after the test
+        
         utils.cleanDirectory(Paths.get(outputPath));
     }
 
