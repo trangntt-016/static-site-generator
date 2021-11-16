@@ -27,12 +27,13 @@ public class TestUtils {
         return null;
     }
 
-    public static String generateOutputPath() {
+    public static String generateOutputPath() throws IOException {
         Path folderPath = Paths.get("./src/main/resources/output");
 
         if (Files.exists(folderPath)) {
             return folderPath.toString();
         }
+        Files.createDirectories(Paths.get("./src/main/resources/output"));
 
         return null;
     }
