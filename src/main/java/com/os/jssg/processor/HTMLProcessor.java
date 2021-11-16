@@ -59,9 +59,9 @@ public class HTMLProcessor {
         new HTMLUtils().createIndexHTML(HTMLFileNames, outputPath);
       }
     } catch (IOException ex) {
-      //logger.error(ex.getMessage());
+      ex.printStackTrace();
     } catch (Exception ex) {
-      //logger.error(ex.getMessage());
+      ex.printStackTrace();
     }
   }
 }
