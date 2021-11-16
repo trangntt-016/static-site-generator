@@ -17,7 +17,7 @@ public class MDUtilsTest {
     @Test
     public void shouldReturnMapFromValidPath() throws IOException {
         // GIVEN
-        String path = TestUtils.generateRandomInputPath();
+        String path = TestUtils.generateMDFile();
 
         // WHEN
         Map<String, String> result = utils.convertMdToHTML(path);

@@ -37,5 +37,15 @@ public class TestUtils {
         return null;
     }
 
+    public static String generateMDFile() throws IOException {
+        Path filePath = Files.list(Paths.get("./src/main/resources")).filter(f->f.toString().endsWith(".md")).findFirst().get();
+
+        if (Files.exists(filePath)) {
+            return filePath.toString();
+        }
+
+        return null;
+    }
+
 
 }
