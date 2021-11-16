@@ -77,24 +77,30 @@ public class HTMLUtils {
                 }
               });
     } catch (Exception ex) {
-      logger.error(ex.getMessage());
+      // logger.error(ex.getMessage());
     }
   }
 
-  public void createHTMLFile(Map<String, String> htmlMap, String outputPathStr) throws IOException {
+  public void createHTMLFile(Map<String, String> htmlMap, String outputPathStr) {
     Path outputPath = Paths.get(outputPathStr);
 
     if (!Files.exists(outputPath)) {
-      logger.error("Specified output path is not a valid directory");
+      //logger.error("Specified output path is not a valid directory");
       return;
     }
+    try{
+      // write new html files to dist
+      Path path = Paths.get(outputPath + "\\" + htmlMap.get("title") + ".html");
+      Charset charset = Charset.forName("UTF-8");
+      byte[] strToBytes = htmlMap.get("body").getBytes(charset);
 
-    // write new html files to dist
-    Path path = Paths.get(outputPath + "\\" + htmlMap.get("title") + ".html");
-    Charset charset = Charset.forName("UTF-8");
-    byte[] strToBytes = htmlMap.get("body").getBytes(charset);
+      Files.write(path, strToBytes);
+    }
+    catch(IOException ex){
 
-    Files.write(path, strToBytes);
+    }
+
+
   }
 
   public void resetDist() throws IOException {

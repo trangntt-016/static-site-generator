@@ -29,9 +29,9 @@ public class TextUtil {
 
             br.close();
         } catch (FileNotFoundException e) {
-            logger.error(e.getMessage());
+            // e.printStackTrace();
         } catch (IOException e) {
-            logger.error(e.getMessage());
+            // e.printStackTrace();
         }
         return sb.toString();
     }
@@ -53,9 +53,9 @@ public class TextUtil {
 
             br.close();
         } catch (FileNotFoundException e) {
-            logger.error(e.getMessage());
+
         } catch (IOException e) {
-            logger.error(e.getMessage());
+
         }
         return sb.toString();
     }

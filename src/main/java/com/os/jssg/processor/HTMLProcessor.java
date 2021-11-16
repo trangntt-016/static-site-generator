@@ -19,7 +19,7 @@ public class HTMLProcessor {
   public void convertToHTML(String pathStr, String outputPath, String language) {
     try {
       if (!Files.exists(Paths.get(pathStr))) {
-        logger.error("Cannot find any path with " + pathStr);
+        //logger.error("Cannot find any path with " + pathStr);
         return;
       }
 
@@ -54,19 +54,14 @@ public class HTMLProcessor {
                   Map htmlMap =
                       new HTMLUtils().convertTextToHTML(f.toAbsolutePath().toString(), language);
                   HTMLFileNames.add(htmlMap.get("title").toString());
-                  try {
                     new HTMLUtils().createHTMLFile(htmlMap, outputPath);
-
-                  } catch (IOException e) {
-                    logger.error(e.getMessage());
-                  }
                 });
         new HTMLUtils().createIndexHTML(HTMLFileNames, outputPath);
       }
     } catch (IOException ex) {
-      logger.error(ex.getMessage());
+      //logger.error(ex.getMessage());
     } catch (Exception ex) {
-      logger.error(ex.getMessage());
+      //logger.error(ex.getMessage());
     }
   }
 }
