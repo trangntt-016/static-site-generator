@@ -3,6 +3,8 @@ name: Maven CI/CD
 on:
   push:
     branches: [ ci-cd ]
+  pull_request:
+    branches: [ ci-cd ]
 
 jobs:
   build_and_test:

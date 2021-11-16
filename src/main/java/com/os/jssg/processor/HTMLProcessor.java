@@ -60,8 +60,6 @@ public class HTMLProcessor {
       }
     } catch (IOException ex) {
       ex.printStackTrace();
-    } catch (Exception ex) {
-      ex.printStackTrace();
     }
   }
 }

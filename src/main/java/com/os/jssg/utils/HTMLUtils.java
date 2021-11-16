@@ -97,7 +97,7 @@ public class HTMLUtils {
       Files.write(path, strToBytes);
     }
     catch(IOException ex){
-
+      ex.printStackTrace();
     }
 
 
@@ -119,8 +119,7 @@ public class HTMLUtils {
     Path outputPath = Paths.get(outputPathStr);
 
     if (!Files.exists(outputPath)) {
-      logger.error("Specified output path is not a valid directory");
-      return;
+      throw new IOException("Specified output path is not a valid directory");
     }
 
     // write new html files to dist
