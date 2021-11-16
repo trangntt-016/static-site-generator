@@ -29,12 +29,12 @@ public class HTMLProcessorTest {
         processor.convertToHTML(inputPath, outputPath, language);
 
         // THEN
-        Files.list(Paths.get(outputPath));
+        List<Path>files = Files.list(Paths.get(outputPath)).collect(Collectors.toList());
 
-        //assertThat(folderPath).exists().toString().endsWith(".html");
+        assertThat(files.size()).isGreaterThan(0);
 
         // clean directory after the test
-        //utils.cleanDirectory(Paths.get(outputPath));
+        utils.cleanDirectory(Paths.get(outputPath));
     }
 
 //    @Test
