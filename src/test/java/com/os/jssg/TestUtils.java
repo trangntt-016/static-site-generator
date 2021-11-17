@@ -1,4 +1,4 @@
-package test.com.os.jssg;
+package com.os.jssg;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -27,11 +27,19 @@ public class TestUtils {
         return null;
     }
 
-    public static String generateOutputPath() {
+    public static String generateOutputPath() throws IOException {
         Path folderPath = Paths.get("./src/main/resources/output");
 
-        if (Files.exists(folderPath)) {
-            return folderPath.toString();
+        Files.createDirectories(folderPath);
+
+        return folderPath.toString();
+    }
+
+    public static String generateMDFile() throws IOException {
+        Path filePath = Files.list(Paths.get("./src/main/resources")).filter(f->f.toString().endsWith(".md")).findFirst().get();
+
+        if (Files.exists(filePath)) {
+            return filePath.toString();
         }
 
         return null;
