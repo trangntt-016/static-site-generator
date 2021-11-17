@@ -1,112 +1,113 @@
 package com.os.jssg.processor;
 
-import com.os.jssg.utils.HTMLUtils;
-import org.junit.jupiter.api.Test;
-import com.os.jssg.TestUtils;
+import static org.assertj.core.api.Assertions.assertThat;
 
+import com.os.jssg.TestUtils;
+import com.os.jssg.utils.HTMLUtils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Collectors;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
 
 public class HTMLProcessorTest {
-    private HTMLProcessor processor = new HTMLProcessor();
-    private HTMLUtils utils = new HTMLUtils();
+  private HTMLProcessor processor = new HTMLProcessor();
+  private HTMLUtils utils = new HTMLUtils();
 
-    @Test
-    void shouldCreateNewFileFromValidPathAndValidOutputPathAndValidLanguage() throws IOException {
-        String inputPath = TestUtils.generateRandomInputPath();
+  @Test
+  void shouldCreateNewFileFromValidPathAndValidOutputPathAndValidLanguage() throws IOException {
+    String inputPath = TestUtils.generateRandomInputPath();
 
-        String outputPath = TestUtils.generateOutputPath();
+    String outputPath = TestUtils.generateOutputPath();
 
-        String language = "en";
+    String language = "en";
 
-        processor.convertToHTML(inputPath, outputPath, language);
-        
-        utils.cleanDirectory(Paths.get(outputPath));
-    }
+    processor.convertToHTML(inputPath, outputPath, language);
 
-    @Test
-    void shouldCreateNoFilesFromInValidPathAndValidOutputPathAndValidLanguage() throws IOException {
-        String inputPath = "invalid filepath";
+    utils.cleanDirectory(Paths.get(outputPath));
+  }
 
-        String outputPath = TestUtils.generateOutputPath();
+  @Test
+  void shouldCreateNoFilesFromInValidPathAndValidOutputPathAndValidLanguage() throws IOException {
+    String inputPath = "invalid filepath";
 
-        String language = "en";
+    String outputPath = TestUtils.generateOutputPath();
 
-        // WHEN
-        processor.convertToHTML(inputPath, outputPath, language);
+    String language = "en";
 
-        // THEN
-        List<Path> filesPath= Files.list(Paths.get("./src/main/resources/output")).collect(Collectors.toList());
+    // WHEN
+    processor.convertToHTML(inputPath, outputPath, language);
 
-        assertThat(filesPath).hasSize(0);
+    // THEN
+    List<Path> filesPath =
+        Files.list(Paths.get("./src/main/resources/output")).collect(Collectors.toList());
 
-        // clean directory after the test
-        utils.cleanDirectory(Paths.get(outputPath));
-    }
+    assertThat(filesPath).hasSize(0);
 
-    @Test
-    void shouldCreateNoFilesFromValidPathAndInvalidOutputPathAndValidLanguage() throws IOException {
-        String inputPath = TestUtils.generateRandomInputPath();
+    // clean directory after the test
+    utils.cleanDirectory(Paths.get(outputPath));
+  }
 
-        String outputPath = "invalid output";
+  @Test
+  void shouldCreateNoFilesFromValidPathAndInvalidOutputPathAndValidLanguage() throws IOException {
+    String inputPath = TestUtils.generateRandomInputPath();
 
-        String language = "en";
+    String outputPath = "invalid output";
 
-        // WHEN
-        processor.convertToHTML(inputPath, outputPath, language);
+    String language = "en";
 
-        // THEN
-        List<Path> filesPath= Files.list(Paths.get("./src/main/resources/output")).collect(Collectors.toList());
+    // WHEN
+    processor.convertToHTML(inputPath, outputPath, language);
 
-        assertThat(filesPath).hasSize(0);
+    // THEN
+    List<Path> filesPath =
+        Files.list(Paths.get("./src/main/resources/output")).collect(Collectors.toList());
 
-        // clean directory after the test
-        utils.cleanDirectory(Paths.get(outputPath));
-    }
+    assertThat(filesPath).hasSize(0);
 
-    @Test
-    void shouldCreateNewFileFromMdPathAndValidOutputPathAndValidLanguage() throws IOException{
-        String inputPath = TestUtils.generateMDFile();
+    // clean directory after the test
+    utils.cleanDirectory(Paths.get(outputPath));
+  }
 
-        String outputPath = TestUtils.generateOutputPath();
+  @Test
+  void shouldCreateNewFileFromMdPathAndValidOutputPathAndValidLanguage() throws IOException {
+    String inputPath = TestUtils.generateMDFile();
 
-        String language = "en";
+    String outputPath = TestUtils.generateOutputPath();
 
-        processor.convertToHTML(inputPath, outputPath, language);
+    String language = "en";
 
-        utils.cleanDirectory(Paths.get(outputPath));
-    }
+    processor.convertToHTML(inputPath, outputPath, language);
 
-    @Test
-    void shouldCreateNewFilesFromFolderPathAndValidOutputPathAndValidLanguage() throws IOException{
-        String inputPath = TestUtils.generateFolder();
+    utils.cleanDirectory(Paths.get(outputPath));
+  }
 
-        String outputPath = TestUtils.generateOutputPath();
+  @Test
+  void shouldCreateNewFilesFromFolderPathAndValidOutputPathAndValidLanguage() throws IOException {
+    String inputPath = TestUtils.generateFolder();
 
-        String language = "en";
+    String outputPath = TestUtils.generateOutputPath();
 
-        processor.convertToHTML(inputPath, outputPath, language);
+    String language = "en";
 
-        utils.cleanDirectory(Paths.get(outputPath));
-    }
+    processor.convertToHTML(inputPath, outputPath, language);
 
-    @Test
-    void shouldCreateNoFilesFromEmtyFolderPathAndValidOutputPathAndValidLanguage() throws IOException{
-        String inputPath = TestUtils.generateOutputPath();
+    utils.cleanDirectory(Paths.get(outputPath));
+  }
 
-        String outputPath = TestUtils.generateOutputPath();
+  @Test
+  void shouldCreateNoFilesFromEmtyFolderPathAndValidOutputPathAndValidLanguage()
+      throws IOException {
+    String inputPath = TestUtils.generateOutputPath();
 
-        String language = "en";
+    String outputPath = TestUtils.generateOutputPath();
 
-        processor.convertToHTML(inputPath, outputPath, language);
+    String language = "en";
 
-        utils.cleanDirectory(Paths.get(outputPath));
-    }
+    processor.convertToHTML(inputPath, outputPath, language);
 
+    utils.cleanDirectory(Paths.get(outputPath));
+  }
 }

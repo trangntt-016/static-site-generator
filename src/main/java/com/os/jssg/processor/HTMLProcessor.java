@@ -53,14 +53,13 @@ public class HTMLProcessor {
                   Map htmlMap =
                       new HTMLUtils().convertTextToHTML(f.toAbsolutePath().toString(), language);
                   HTMLFileNames.add(htmlMap.get("title").toString());
-                    new HTMLUtils().createHTMLFile(htmlMap, outputPath);
+                  new HTMLUtils().createHTMLFile(htmlMap, outputPath);
                 });
         new HTMLUtils().createIndexHTML(HTMLFileNames, outputPath);
       }
     } catch (IOException ex) {
       ex.printStackTrace();
-    }
-    catch (Exception ex){
+    } catch (Exception ex) {
       ex.printStackTrace();
     }
   }
