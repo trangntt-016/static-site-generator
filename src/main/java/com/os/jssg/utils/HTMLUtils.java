@@ -17,7 +17,7 @@ public class HTMLUtils {
     // read text and convert break line to <br/>
     String convertedText = new TextUtil().readText(pathStr);
 
-    if(convertedText.isEmpty() || language == null){
+    if (convertedText.isEmpty() || language == null) {
       return null;
     }
 
@@ -85,22 +85,19 @@ public class HTMLUtils {
     Path outputPath = Paths.get(outputPathStr);
 
     if (!Files.exists(outputPath)) {
-      //logger.error("Specified output path is not a valid directory");
+      // logger.error("Specified output path is not a valid directory");
       return;
     }
-    try{
+    try {
       // write new html files to dist
       Path path = Paths.get(outputPath + "\\" + htmlMap.get("title") + ".html");
       Charset charset = Charset.forName("UTF-8");
       byte[] strToBytes = htmlMap.get("body").getBytes(charset);
 
       Files.write(path, strToBytes);
-    }
-    catch(IOException ex){
+    } catch (IOException ex) {
       ex.printStackTrace();
     }
-
-
   }
 
   public void resetDist() throws IOException {
