@@ -65,12 +65,11 @@ public class TextUtil {
         String[] strings = title.split(" ");
 
         for (String s : strings) {
-            sb.append(
-                            s.substring(0, 1).toUpperCase(Locale.ROOT) + s.substring(1).toLowerCase(Locale.ROOT))
+            sb.append(s.substring(0, 1).toUpperCase(Locale.ROOT) + s.substring(1).toLowerCase(Locale.ROOT))
                     .append(" ");
         }
 
-        return sb.toString();
+        return sb.toString().trim();
     }
 
     public String getTitleFromText(String convertedText) {

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13f0f8b4-8044-4d7d-a19c-fa0476da3f95" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="D:\SchoolWork\OSD600\jssg\static-site-generator\src\main\resources\coverage-report" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20hRSZfr7tOtzTBZIH66uK21cvd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SchoolWork\OSD600\jssg\static-site-generator\src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.os.jssg" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test.com.os.jssg.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in static-site-generator">
+    <configuration name="All in static-site-generator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="static-site-generator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HTMLUtilsTest.shouldDeleteAllFilesInADirectory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="static-site-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.os.jssg.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.os.jssg.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.os.jssg.utils.HTMLUtilsTest" />
+      <option name="METHOD_NAME" value="shouldDeleteAllFilesInADirectory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MDUtilsTest.shouldReturnATitleFromReadmeFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="static-site-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.os.jssg.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.os.jssg.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.os.jssg.utils.MDUtilsTest" />
+      <option name="METHOD_NAME" value="shouldReturnATitleFromReadmeFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextUtilsTest.shouldReturnBodyHTMLFromText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="static-site-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.os.jssg.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.os.jssg.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.os.jssg.utils.TextUtilsTest" />
+      <option name="METHOD_NAME" value="shouldReturnBodyHTMLFromText" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextUtilsTest.shouldReturnCapitalizeSentence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="static-site-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.os.jssg.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.os.jssg.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.os.jssg.utils.TextUtilsTest" />
+      <option name="METHOD_NAME" value="shouldReturnCapitalizeSentence" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in static-site-generator" />
+      <item itemvalue="JUnit.MDUtilsTest.shouldReturnATitleFromReadmeFile" />
+      <item itemvalue="JUnit.TextUtilsTest.shouldReturnCapitalizeSentence" />
+      <item itemvalue="JUnit.TextUtilsTest.shouldReturnBodyHTMLFromText" />
+      <item itemvalue="JUnit.HTMLUtilsTest.shouldDeleteAllFilesInADirectory" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in static-site-generator" />
+        <item itemvalue="JUnit.HTMLUtilsTest.shouldDeleteAllFilesInADirectory" />
+        <item itemvalue="JUnit.TextUtilsTest.shouldReturnBodyHTMLFromText" />
+        <item itemvalue="JUnit.TextUtilsTest.shouldReturnCapitalizeSentence" />
+        <item itemvalue="JUnit.MDUtilsTest.shouldReturnATitleFromReadmeFile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13f0f8b4-8044-4d7d-a19c-fa0476da3f95" name="Changes" comment="" />
+      <created>1636494835119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636494835119</updated>
+      <workItem from="1636494836494" duration="22723000" />
+      <workItem from="1636660879788" duration="60000" />
+      <workItem from="1637016404312" duration="4400000" />
+      <workItem from="1637069517668" duration="29407000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/os/jssg/processor/HTMLProcessorTest.java</url>
+          <line>53</line>
+          <properties class="com.os.jssg.processor.HTMLProcessorTest" method="shouldCreateNoFilesFromValidPathAndInvalidOutputPathAndValidLanguage">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/os/jssg/processor/HTMLProcessorTest.java</url>
+          <line>33</line>
+          <properties class="com.os.jssg.processor.HTMLProcessorTest" method="shouldCreateNoFilesFromInValidPathAndValidOutputPathAndValidLanguage">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/os/jssg/utils/MDUtilsTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/os/jssg/utils/MDUtils.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="pDivs[1]" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/static_site_generator$All_in_static_site_generator.ic" NAME="All in static-site-generator Coverage Results" MODIFIED="1637166194484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

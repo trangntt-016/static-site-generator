@@ -45,5 +45,15 @@ public class TestUtils {
         return null;
     }
 
+    public static String generateFolder() throws IOException {
+        Path folderPath = Paths.get("./src/main/resources/SherlockHolmesSelectedStories");
+
+        if (Files.exists(folderPath)) {
+            return folderPath.toString();
+        }
+
+        return null;
+    }
+
 
 }
