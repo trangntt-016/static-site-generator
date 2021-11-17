@@ -180,7 +180,7 @@
       <workItem from="1636494836494" duration="22723000" />
       <workItem from="1636660879788" duration="60000" />
       <workItem from="1637016404312" duration="4400000" />
-      <workItem from="1637069517668" duration="28708000" />
+      <workItem from="1637069517668" duration="29407000" />
     </task>
     <servers />
   </component>
@@ -240,6 +240,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/static_site_generator$All_in_static_site_generator.ic" NAME="All in static-site-generator Coverage Results" MODIFIED="1637157397085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/static_site_generator$All_in_static_site_generator.ic" NAME="All in static-site-generator Coverage Results" MODIFIED="1637166194484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

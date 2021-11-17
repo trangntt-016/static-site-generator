@@ -84,8 +84,6 @@ public class HTMLUtilsTest {
         int afterDelete = Files.list(Paths.get(path)).collect(Collectors.toList()).size();
 
         // THEN
-        assertThat(beforeDelete).isGreaterThan(afterDelete);
-
         assertThat(afterDelete).isEqualTo(0);
 
 
