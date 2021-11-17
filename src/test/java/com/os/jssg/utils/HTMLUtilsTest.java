@@ -6,7 +6,10 @@ import com.os.jssg.TestUtils;
 
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -64,6 +67,27 @@ public class HTMLUtilsTest {
 
         // THEN
         throwable.isInstanceOf(NullPointerException.class);
+
+    }
+
+    @Test
+    public void shouldDeleteAllFilesInADirectory() throws IOException {
+        // GIVEN
+        String path = TestUtils.generateOutputPath();
+        String inputPath = TestUtils.generateRandomInputPath();
+        Map<String, String>map = new HTMLUtils().convertTextToHTML(inputPath, "en");
+        new HTMLUtils().createHTMLFile(map, path);
+        int beforeDelete = Files.list(Paths.get(path)).collect(Collectors.toList()).size();
+
+        // WHEN
+        new HTMLUtils().cleanDirectory(Paths.get(path));
+        int afterDelete = Files.list(Paths.get(path)).collect(Collectors.toList()).size();
+
+        // THEN
+        assertThat(beforeDelete).isGreaterThan(afterDelete);
+
+        assertThat(afterDelete).isEqualTo(0);
+
 
     }
 }

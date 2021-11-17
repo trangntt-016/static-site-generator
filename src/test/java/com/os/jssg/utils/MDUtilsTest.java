@@ -51,4 +51,17 @@ public class MDUtilsTest {
         throwable.isInstanceOf(NullPointerException.class);
 
     }
+
+    @Test
+    public void shouldReturnATitleFromReadmeFile() throws IOException {
+        // GIVEN
+        String title = "<h1>Testing</h1>";
+
+        // WHEN
+        String converted = utils.getTitleFromReadMe(title);
+
+        // THEN
+        assertThat(converted).isEqualTo("Testing");
+
+    }
 }

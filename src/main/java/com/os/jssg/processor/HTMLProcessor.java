@@ -19,7 +19,6 @@ public class HTMLProcessor {
   public void convertToHTML(String pathStr, String outputPath, String language) {
     try {
       if (!Files.exists(Paths.get(pathStr))) {
-        //logger.error("Cannot find any path with " + pathStr);
         return;
       }
 

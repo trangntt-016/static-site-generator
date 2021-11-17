@@ -70,4 +70,43 @@ public class HTMLProcessorTest {
         utils.cleanDirectory(Paths.get(outputPath));
     }
 
+    @Test
+    void shouldCreateNewFileFromMdPathAndValidOutputPathAndValidLanguage() throws IOException{
+        String inputPath = TestUtils.generateMDFile();
+
+        String outputPath = TestUtils.generateOutputPath();
+
+        String language = "en";
+
+        processor.convertToHTML(inputPath, outputPath, language);
+
+        utils.cleanDirectory(Paths.get(outputPath));
+    }
+
+    @Test
+    void shouldCreateNewFilesFromFolderPathAndValidOutputPathAndValidLanguage() throws IOException{
+        String inputPath = TestUtils.generateFolder();
+
+        String outputPath = TestUtils.generateOutputPath();
+
+        String language = "en";
+
+        processor.convertToHTML(inputPath, outputPath, language);
+
+        utils.cleanDirectory(Paths.get(outputPath));
+    }
+
+    @Test
+    void shouldCreateNoFilesFromEmtyFolderPathAndValidOutputPathAndValidLanguage() throws IOException{
+        String inputPath = TestUtils.generateOutputPath();
+
+        String outputPath = TestUtils.generateOutputPath();
+
+        String language = "en";
+
+        processor.convertToHTML(inputPath, outputPath, language);
+
+        utils.cleanDirectory(Paths.get(outputPath));
+    }
+
 }
