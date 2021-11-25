@@ -7,12 +7,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class HTMLUtils {
-  private final Logger logger = LoggerFactory.getLogger(HTMLUtils.class);
-
   public Map<String, String> convertTextToHTML(String pathStr, String language) {
     // read text and convert break line to <br/>
     String convertedText = new TextUtil().readText(pathStr);
@@ -73,7 +69,7 @@ public class HTMLUtils {
                 try {
                   Files.delete(f);
                 } catch (IOException e) {
-                  logger.error("Cannot delete file " + f);
+                  System.out.println("Cannot delete file " + f);
                 }
               });
     } catch (Exception ex) {

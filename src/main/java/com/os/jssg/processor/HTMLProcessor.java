@@ -9,13 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import lombok.NoArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @NoArgsConstructor
 public class HTMLProcessor {
-  private final Logger logger = LoggerFactory.getLogger(HTMLProcessor.class);
-
   public void convertToHTML(String pathStr, String outputPath, String language) {
     try {
       if (!Files.exists(Paths.get(pathStr))) {

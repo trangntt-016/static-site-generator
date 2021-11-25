@@ -3,11 +3,8 @@ package com.os.jssg.utils;
 import com.github.rjeschke.txtmark.Processor;
 import java.io.*;
 import java.util.Locale;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class TextUtil {
-  private final Logger logger = LoggerFactory.getLogger(TextUtil.class);
 
   public String readText(String pathStr) {
     StringBuilder sb = new StringBuilder();
