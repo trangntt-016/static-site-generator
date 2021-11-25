@@ -11,8 +11,32 @@
     <groupId>com.os</groupId>
     <artifactId>jssg</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>jssg</name>
-    <description>jssg</description>
+    <name>trang-jssg</name>
+    <url>https://github.com/trangntt-016/static-site-generator</url>
+    <description>A simple Static Site Generator (SSG) for generating a complete HTML website from raw data and files, without having to author any HTML by hand.</description>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Trang Nguyen</name>
+            <email>trangntt.016@gmail.com</email>
+            <organization>com.os</organization>
+            <organizationUrl>https://github.com/trangntt-016/static-site-generator</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/trangntt-016/static-site-generator.git</connection>
+        <developerConnection>scm:git:ssh://github.com:trangntt-016/static-site-generator.git</developerConnection>
+        <url>https://github.com/trangntt-016/static-site-generator</url>
+    </scm>
+
     <properties>
         <java.version>11</java.version>
     </properties>
