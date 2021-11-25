@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"com.os.jssg.processor","l":"HTMLProcessor"},{"p":"com.os.jssg.utils","l":"HTMLUtils"},{"p":"com.os.jssg.utils","l":"JSonUtils"},{"p":"com.os.jssg","l":"JssgApplication"},{"p":"com.os.jssg.utils","l":"MDUtils"},{"p":"com.os.jssg.utils","l":"TextUtil"}]
