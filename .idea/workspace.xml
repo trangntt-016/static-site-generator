@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13f0f8b4-8044-4d7d-a19c-fa0476da3f95" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deployment.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml.versionsBackup" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/apidocs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allpackages-index.html" afterDir="false" />
@@ -43,12 +42,13 @@
       <change beforePath="$PROJECT_DIR$/target/apidocs/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/package-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/apidocs/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/type-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-javadoc.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-javadoc.jar.asc" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-javadoc.jar.asc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar.asc" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar.asc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-javadoc.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar.asc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar.asc" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar.asc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.pom.asc" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.pom.asc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.pom.asc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.processor.HTMLProcessorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.processor.HTMLProcessorTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.utils.HTMLUtilsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.utils.HTMLUtilsTest.xml" afterDir="false" />
@@ -59,6 +59,7 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.HTMLUtilsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.HTMLUtilsTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.JsonUtilsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.JsonUtilsTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.MDUtilsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.MDUtilsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.TextUtilsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.TextUtilsTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +240,7 @@
       <workItem from="1637347321921" duration="52000" />
       <workItem from="1637777438116" duration="3486000" />
       <workItem from="1637787781087" duration="22922000" />
-      <workItem from="1637860508886" duration="211000" />
+      <workItem from="1637860508886" duration="694000" />
     </task>
     <servers />
   </component>
