@@ -5,46 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13f0f8b4-8044-4d7d-a19c-fa0476da3f95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jssg.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml.versionsBackup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_5_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/static-site-generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/static-site-generator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/os/jssg/processor/HTMLProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/os/jssg/processor/HTMLProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/os/jssg/utils/HTMLUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/os/jssg/utils/HTMLUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/os/jssg/utils/MDUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/os/jssg/utils/MDUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/os/jssg/utils/TextUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/os/jssg/utils/TextUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml.versionsBackup" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/apidocs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allpackages-index.html" afterDir="false" />
@@ -79,33 +42,14 @@
       <change beforePath="$PROJECT_DIR$/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/apidocs/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/package-search-index.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/apidocs/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/os/jssg/JssgApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/os/jssg/JssgApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/os/jssg/processor/HTMLProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/os/jssg/processor/HTMLProcessor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/os/jssg/utils/HTMLUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/os/jssg/utils/HTMLUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/os/jssg/utils/JSonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/os/jssg/utils/JSonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/os/jssg/utils/MDUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/os/jssg/utils/MDUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/os/jssg/utils/TextUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/os/jssg/utils/TextUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-javadoc.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-javadoc.jar.asc" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-javadoc.jar.asc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar.asc" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT-sources.jar.asc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar.asc" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar.asc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.pom" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.pom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.pom.asc" beforeDir="false" afterPath="$PROJECT_DIR$/target/jssg-1.0-SNAPSHOT.pom.asc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/1.0-SNAPSHOT/jssg-1.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/1.0-SNAPSHOT/jssg-1.0-SNAPSHOT-javadoc.jar.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/1.0-SNAPSHOT/jssg-1.0-SNAPSHOT-sources.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/1.0-SNAPSHOT/jssg-1.0-SNAPSHOT-sources.jar.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/1.0-SNAPSHOT/jssg-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/1.0-SNAPSHOT/jssg-1.0-SNAPSHOT.jar.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/1.0-SNAPSHOT/jssg-1.0-SNAPSHOT.pom" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/1.0-SNAPSHOT/jssg-1.0-SNAPSHOT.pom.asc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/1.0-SNAPSHOT/maven-metadata-nexus.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/com/os/jssg/maven-metadata-nexus.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.processor.HTMLProcessorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.processor.HTMLProcessorTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.utils.HTMLUtilsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.utils.HTMLUtilsTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.utils.JsonUtilsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.os.jssg.utils.JsonUtilsTest.xml" afterDir="false" />
@@ -115,13 +59,6 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.HTMLUtilsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.HTMLUtilsTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.JsonUtilsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.JsonUtilsTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.MDUtilsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.MDUtilsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.TextUtilsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.os.jssg.utils.TextUtilsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/os/jssg/TestUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/os/jssg/TestUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/os/jssg/processor/HTMLProcessorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/os/jssg/processor/HTMLProcessorTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/os/jssg/utils/HTMLUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/os/jssg/utils/HTMLUtilsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/os/jssg/utils/JsonUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/os/jssg/utils/JsonUtilsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/os/jssg/utils/MDUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/os/jssg/utils/MDUtilsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/os/jssg/utils/TextUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/os/jssg/utils/TextUtilsTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +238,8 @@
       <workItem from="1637069517668" duration="33302000" />
       <workItem from="1637347321921" duration="52000" />
       <workItem from="1637777438116" duration="3486000" />
-      <workItem from="1637787781087" duration="21740000" />
+      <workItem from="1637787781087" duration="22922000" />
+      <workItem from="1637860508886" duration="211000" />
     </task>
     <servers />
   </component>
