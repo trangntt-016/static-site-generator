@@ -2,11 +2,8 @@ package com.os.jssg.utils;
 
 import com.github.rjeschke.txtmark.Processor;
 import java.util.Map;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class MDUtils {
-  private final Logger logger = LoggerFactory.getLogger(HTMLUtils.class);
 
   public Map<String, String> convertMdToHTML(String pathStr) {
 

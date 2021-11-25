@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/static-site-generator.iml" filepath="$PROJECT_DIR$/.idea/static-site-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jssg.iml" filepath="$PROJECT_DIR$/jssg.iml" />
     </modules>
   </component>
 </project>
