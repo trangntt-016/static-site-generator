@@ -1,4 +1,5 @@
 # Java Static Site Generator (JSSG)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.trangntt-016/jssg.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.github.trangntt-016%22%20AND%20a:%22jssg%22)
 
 A simple Static Site Generator (SSG) for generating a complete HTML website from raw data and files, without having to author any HTML by hand.
 
