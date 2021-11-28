@@ -2,3 +2,4 @@
 .idea
 .gitignore
 pom.xml.versionBackup
+/target
