@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.os.jssg"},{"l":"com.os.jssg.processor"},{"l":"com.os.jssg.utils"}]
