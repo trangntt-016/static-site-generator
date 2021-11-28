@@ -20,7 +20,8 @@ A simple Static Site Generator (SSG) for generating a complete HTML website from
 <dependency>
   <groupId>io.github.trangntt-016</groupId>
   <artifactId>jssg</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
+  <type>jarhttps:</type>
 </dependency>
 ```
 Change the arguments with the following options
