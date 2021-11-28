@@ -5,14 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13f0f8b4-8044-4d7d-a19c-fa0476da3f95" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml.versionsBackup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deployment.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allclasses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/JssgApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/JssgApplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/class-use/JssgApplication.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/class-use/JssgApplication.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/HTMLProcessor.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/HTMLProcessor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/class-use/HTMLProcessor.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/class-use/HTMLProcessor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/processor/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/HTMLUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/HTMLUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/JSonUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/JSonUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/MDUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/MDUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/TextUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/TextUtil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/class-use/HTMLUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/class-use/HTMLUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/class-use/JSonUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/class-use/JSonUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/class-use/MDUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/class-use/MDUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/class-use/TextUtil.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/class-use/TextUtil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/com/os/jssg/utils/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/member-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/package-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/apidocs/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/apidocs/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/os/jssg/JssgApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/os/jssg/JssgApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/os/jssg/processor/HTMLProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/os/jssg/processor/HTMLProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0.0-SNAPSHOT-javadoc.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0.0-SNAPSHOT.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0.0-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jssg-1.0.0-SNAPSHOT.pom.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/io/github/trangntt-016/jssg/1.0.0-SNAPSHOT/jssg-1.0.0-SNAPSHOT-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/io/github/trangntt-016/jssg/1.0.0-SNAPSHOT/jssg-1.0.0-SNAPSHOT-javadoc.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/io/github/trangntt-016/jssg/1.0.0-SNAPSHOT/jssg-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/io/github/trangntt-016/jssg/1.0.0-SNAPSHOT/jssg-1.0.0-SNAPSHOT.jar.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/io/github/trangntt-016/jssg/1.0.0-SNAPSHOT/jssg-1.0.0-SNAPSHOT.pom" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/io/github/trangntt-016/jssg/1.0.0-SNAPSHOT/jssg-1.0.0-SNAPSHOT.pom.asc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/io/github/trangntt-016/jssg/1.0.0-SNAPSHOT/maven-metadata-nexus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/nexus-staging/deferred/io/github/trangntt-016/jssg/maven-metadata-nexus.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +243,7 @@
       <workItem from="1637787781087" duration="22922000" />
       <workItem from="1637860508886" duration="5999000" />
       <workItem from="1637878535684" duration="4340000" />
-      <workItem from="1638063585071" duration="5991000" />
+      <workItem from="1638063585071" duration="12623000" />
     </task>
     <servers />
   </component>

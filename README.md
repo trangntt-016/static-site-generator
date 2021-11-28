@@ -15,6 +15,24 @@ A simple Static Site Generator (SSG) for generating a complete HTML website from
 * [Maven 3.8.1](https://maven.apache.org/download.cgi)
 * [Windows 10](https://www.microsoft.com/en-ca/software-download/windows10)
 
+### Installation
+```
+<dependency>
+  <groupId>io.github.trangntt-016</groupId>
+  <artifactId>jssg</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+</dependency>
+```
+Change the arguments with the following options
+
+| <div style="width:120px">Options</div> | Usage  
+| --- | --- | 
+| --h, --help |  Display a list of options
+| --v, --version |  Display current version of jssg
+| --i, --input |  Allow the user to specify an input file or folder to be processed. It will generates one .html output file for each input file and the filename is based on the title of the story’s header
+| --o, --output | Specify a different output path (default is ./dist)
+| --l, --lang | Indicate the language to use when generating the lang attribute on the root <html> element
+| --c, --config | Indicate the path to a JSON config file
 
 ### Executing program
 * clone this github
